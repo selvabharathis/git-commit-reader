@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+    margin-top: 2rem;
+    /* Top margin of 2 rem */
+}
+
+.content-container {
+    margin-left: 2rem;
+    /* Left margin of 2 rem */
+    margin-right: 2rem;
+    /* Right margin of 2 rem */
+}

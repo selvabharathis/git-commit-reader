@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'git-commit-reader-frontend';
+
+  constructor() { }
+
+  ngOnInit(): void {
+
+  }
+  
 }

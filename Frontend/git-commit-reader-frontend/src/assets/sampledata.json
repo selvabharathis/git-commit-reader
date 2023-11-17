@@ -1,0 +1,110 @@
+{
+    "sha": "a1bf367b3af680b1182cc52bb77ba095764a11f9",
+    "node_id": "MDY6Q29tbWl0NDY0MzM5Mzc6YTFiZjM2N2IzYWY2ODBiMTE4MmNjNTJiYjc3YmEwOTU3NjRhMTFmOQ==",
+    "commit": {
+        "author": {
+            "name": "Dariusz Rybi",
+            "email": "jiivanq@gmail.com",
+            "date": "2020-04-23T14:33:50Z"
+        },
+        "committer": {
+            "name": "Dariusz Rybi",
+            "email": "jiivanq@gmail.com",
+            "date": "2020-04-23T14:33:50Z"
+        },
+        "message": "New blender 2.82",
+        "tree": {
+            "sha": "0eadaa63092216a6be5c8ffc9c323a684bfc9688",
+            "url": "https://api.github.com/repos/golemfactory/clay/git/trees/0eadaa63092216a6be5c8ffc9c323a684bfc9688"
+        },
+        "url": "https://api.github.com/repos/golemfactory/clay/git/commits/a1bf367b3af680b1182cc52bb77ba095764a11f9",
+        "comment_count": 0,
+        "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\niQEzBAABCAAdFiEEA06Fpm0cTMz1Abs/QAavgSJXxoQFAl6hp04ACgkQQAavgSJX\nxoTgqwf+MLUf5aYtjr+QWzblj0DX3pSU2z87hB/3czTVavbRZsx58uCJJ0KaLSzS\nF1AvmtWilbqJ7+6gPmYTOynvlWLRQBmALlWg2zjXbkO47evsPTAar8I34BfIeecV\n+83UtKkNlAdMfGe0FH2KCXFLhOPlbgOZO8RI2Om5fjkkSSSE3/475C8FHs1Z8+4N\nr/xcH4RikBj66G6qyF30HkXK0zWaiveBdsFOOjwg5eoNSA2bWBxDryuMhIV8uBHa\nVeds5PGRWNHYzbnPUTg/QQuSQozeMDswVUsY+ZLcdcRbKhoi1y7eZabJWUxYLb50\n1UayyhYNLV1NIU5o1EY6EoGXsIa18w==\n=WS/9\n-----END PGP SIGNATURE-----",
+            "payload": "tree 0eadaa63092216a6be5c8ffc9c323a684bfc9688\nparent aaea9e8d6bfa84e60dd4ca5ec968c5c463302258\nauthor Dariusz Rybi <jiivanq@gmail.com> 1587652430 +0200\ncommitter Dariusz Rybi <jiivanq@gmail.com> 1587652430 +0200\n\nNew blender 2.82\n"
+        }
+    },
+    "url": "https://api.github.com/repos/golemfactory/clay/commits/a1bf367b3af680b1182cc52bb77ba095764a11f9",
+    "html_url": "https://github.com/golemfactory/clay/commit/a1bf367b3af680b1182cc52bb77ba095764a11f9",
+    "comments_url": "https://api.github.com/repos/golemfactory/clay/commits/a1bf367b3af680b1182cc52bb77ba095764a11f9/comments",
+    "author": {
+        "login": "jiivan",
+        "id": 293058,
+        "node_id": "MDQ6VXNlcjI5MzA1OA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/293058?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jiivan",
+        "html_url": "https://github.com/jiivan",
+        "followers_url": "https://api.github.com/users/jiivan/followers",
+        "following_url": "https://api.github.com/users/jiivan/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jiivan/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jiivan/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jiivan/subscriptions",
+        "organizations_url": "https://api.github.com/users/jiivan/orgs",
+        "repos_url": "https://api.github.com/users/jiivan/repos",
+        "events_url": "https://api.github.com/users/jiivan/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jiivan/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "jiivan",
+        "id": 293058,
+        "node_id": "MDQ6VXNlcjI5MzA1OA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/293058?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jiivan",
+        "html_url": "https://github.com/jiivan",
+        "followers_url": "https://api.github.com/users/jiivan/followers",
+        "following_url": "https://api.github.com/users/jiivan/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jiivan/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jiivan/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jiivan/subscriptions",
+        "organizations_url": "https://api.github.com/users/jiivan/orgs",
+        "repos_url": "https://api.github.com/users/jiivan/repos",
+        "events_url": "https://api.github.com/users/jiivan/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jiivan/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "aaea9e8d6bfa84e60dd4ca5ec968c5c463302258",
+            "url": "https://api.github.com/repos/golemfactory/clay/commits/aaea9e8d6bfa84e60dd4ca5ec968c5c463302258",
+            "html_url": "https://github.com/golemfactory/clay/commit/aaea9e8d6bfa84e60dd4ca5ec968c5c463302258"
+        }
+    ],
+    "stats": {
+        "total": 7,
+        "additions": 3,
+        "deletions": 4
+    },
+    "files": [
+        {
+            "sha": "586e63429086456a27001c938a85be27ee01b031",
+            "filename": "scripts/node_integration_tests/tasks/__init__.py",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 3,
+            "changes": 4,
+            "blob_url": "https://github.com/golemfactory/clay/blob/a1bf367b3af680b1182cc52bb77ba095764a11f9/scripts%2Fnode_integration_tests%2Ftasks%2F__init__.py",
+            "raw_url": "https://github.com/golemfactory/clay/raw/a1bf367b3af680b1182cc52bb77ba095764a11f9/scripts%2Fnode_integration_tests%2Ftasks%2F__init__.py",
+            "contents_url": "https://api.github.com/repos/golemfactory/clay/contents/scripts%2Fnode_integration_tests%2Ftasks%2F__init__.py?ref=a1bf367b3af680b1182cc52bb77ba095764a11f9",
+            "patch": "@@ -1,8 +1,6 @@\n import copy\n import typing\n \n-from golem.apps.default import BlenderAppDefinition\n-\n _TASK_SETTINGS = {\n     'default': {\n         'type': \"Blender\",\n@@ -167,7 +165,7 @@\n     },\n     'task_api_blender': {\n         'golem': {\n-            'app_id': '6b39331ac73484ff596447cefdfba9e5',\n+            'app_id': 'd31614541096ad3bd2b500aed90490a5',\n             'name': '',\n             'resources': [],\n             'max_price_per_hour': str(10 ** 18),"
+        },
+        {
+            "sha": "7320bc47464ed89f13712ad0b7671a470a03db41",
+            "filename": "scripts/task_api_tests/task-api-readme.md",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 1,
+            "changes": 3,
+            "blob_url": "https://github.com/golemfactory/clay/blob/a1bf367b3af680b1182cc52bb77ba095764a11f9/scripts%2Ftask_api_tests%2Ftask-api-readme.md",
+            "raw_url": "https://github.com/golemfactory/clay/raw/a1bf367b3af680b1182cc52bb77ba095764a11f9/scripts%2Ftask_api_tests%2Ftask-api-readme.md",
+            "contents_url": "https://api.github.com/repos/golemfactory/clay/contents/scripts%2Ftask_api_tests%2Ftask-api-readme.md?ref=a1bf367b3af680b1182cc52bb77ba095764a11f9",
+            "patch": "@@ -56,7 +56,8 @@ The golem block of the JSON is meant for the input Golem needs, these are the sa\n \n App id is the unique identifier of the app including its version.\n You can get the build in app_id's from the logs when starting golem\n-`6b39331ac73484ff596447cefdfba9e5` is `golemfactory/blenderapp:0.7.3` the only available option at the time.\n+`6b39331ac73484ff596447cefdfba9e5` is `golemfactory/blenderapp:0.7.3\n+`d31614541096ad3bd2b500aed90490a5` is `golemfactoryapps/blenderapp:0.8.0` runs blender 2.82\n \n #### golem.name\n "
+        }
+    ]
+}
