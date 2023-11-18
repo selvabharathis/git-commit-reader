@@ -22,7 +22,7 @@
       <!-- Right Area -->
       <div class="col-md-6 text-end">
         <br>
-        <p><span class="commited-by">Committed by </span><span class="commited-by-bold">{{ commitModel.commit.committer.name }} </span><span class="commited-by">on </span><span class="commited-by-bold">{{ commitModel.commit.committer.date | date:'longDate' }}</span></p>
+        <p><span class="commited-by">Committed by </span><span class="commited-by-bold">{{ commitModel.commit.committer.name }} </span><span *ngIf="commitModel.commit.author.date !== commitModel.commit.committer.date"><span class="commited-by">on </span><span class="commited-by-bold">{{ commitModel.commit.committer.date | date:'longDate' }}</span></span></p>
         <p><span class="commit">Commit </span><span class="commit-sha">{{ commitModel.sha }}</span></p>
         <p><span class="parent">Parent </span><span class="parent-sha">{{ commitModel.parents[0].sha }}</span></p>
       </div>
@@ -32,18 +32,28 @@
     <div style="margin-top: 2rem;"></div>
   
     <!-- Expansion Panel -->
-    <div class="accordion" id="expansionPanel">
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingOne">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            Expansion Panel
-          </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#expansionPanel">
-          <div class="accordion-body">
-            <!-- Content of the expansion panel goes here -->
-          </div>
-        </div>
-      </div>
-    </div>
+    <mat-accordion>
+        <mat-expansion-panel hideToggle 
+        *ngFor="let file of commitModel.files; let i = index"
+        [expanded]="panelOpenState[i]"
+        (opened)="panelOpenState[i] = true"
+        (closed)="panelOpenState[i] = false">
+          <mat-expansion-panel-header>
+            <div class="d-flex align-items-center">
+                <!-- Icon -->
+                <img *ngIf="!panelOpenState[i]" src="../../assets/darrow.png" alt="Icon" class="icon">
+                <img *ngIf="panelOpenState[i]" src="../../assets/uarrow.png" alt="Icon" class="icon">
+                <!-- Space between icon and title -->
+                <div style="width: 8px;">
+                </div>
+            <mat-panel-title>
+              <span class="file-title">{{ file.filename }}</span>
+            </mat-panel-title>
+            </div>
+          </mat-expansion-panel-header>
+          <app-patch-viewer [patch]="file.patch"></app-patch-viewer>
+        </mat-expansion-panel>
+        <!-- Space after each expansion pannel -->
+    <div style="margin-top: 2rem;"></div>
+    </mat-accordion>
   </div>

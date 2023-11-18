@@ -6,11 +6,14 @@ import { CommitReaderComponent } from './commit-reader/commit-reader.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {MatExpansionModule} from '@angular/material/expansion';
+import { PatchViewerComponent } from './patch-viewer/patch-viewer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CommitReaderComponent
+    CommitReaderComponent,
+    PatchViewerComponent
   ],
   imports: [
     BrowserModule,
@@ -18,7 +21,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     HttpClientModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

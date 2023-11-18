@@ -1,0 +1,32 @@
+.diff-container {
+    background-color: #f8fbff;
+    border: 1px solid #e7ebf1;
+}
+
+.diff-line {
+    font-family: monospace;
+    display: flex;
+    align-items: baseline;
+    padding: 2px;
+    border-bottom: 1px solid #e7ebf1;
+}
+
+.added {
+    background-color: #d8ffcb;
+    color: #657b83;
+}
+
+.deleted {
+    background-color: #ffe4e9;
+    color: #657b83;
+}
+
+.line-number {
+    color: #6078a9;
+    padding-right: 10px;
+}
+
+.line-content {
+    white-space: pre-wrap;
+    flex-grow: 1;
+}

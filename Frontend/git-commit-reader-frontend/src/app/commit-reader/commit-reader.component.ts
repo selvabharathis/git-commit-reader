@@ -9,6 +9,7 @@ import { GitHubCommitModel } from 'src/model/git-hub-commit-model';
 export class CommitReaderComponent implements OnInit {
 
   @Input() commitModel: GitHubCommitModel = new GitHubCommitModel();
+  panelOpenState: boolean[] = [];
 
   constructor() { }
 

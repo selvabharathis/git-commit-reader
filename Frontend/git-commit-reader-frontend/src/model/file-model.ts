@@ -1,6 +1,6 @@
 export class FileModel {
     sha: string = '';
-    fileName: string = '';
+    filename: string = '';
     status: string = '';
     additions: number = 0;
     deletions: number = 0;

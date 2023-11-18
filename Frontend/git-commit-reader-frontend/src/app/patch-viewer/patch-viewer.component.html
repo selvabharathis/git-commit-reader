@@ -1,0 +1,7 @@
+<div class="diff-container">
+    <div *ngFor="let line of diffLines"  [ngClass]="{ 'added': line.added, 'deleted': line.deleted, 'unchanged': line.unchanged }">
+      <div class="line-number deleted" *ngIf="line.deleted">{{ line.lineNumber }}</div>
+      <div class="line-number added" *ngIf="line.added">{{ line.lineNumber }}</div>
+      <div class="line-content">{{ line.content.substring(1) }}</div>
+    </div>
+  </div>
