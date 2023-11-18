@@ -20,7 +20,7 @@ public class CommitReaderController {
     @Autowired
     CommitReaderService commitReaderService;
 
-    @PostMapping(value = "{owner}/{repository}/commit/{commitSHA}")
+    @GetMapping(value = "{owner}/{repository}/commit/{commitSHA}")
     public GitHubCommitModel getCommitDetails(@PathVariable String owner, @PathVariable String repository, @PathVariable String commitSHA) throws Exception {
         LOGGER.info("getCommitDetails - START");
         GitHubCommitModel gitHubCommitModel = this.commitReaderService.getCommit(owner,repository,commitSHA);

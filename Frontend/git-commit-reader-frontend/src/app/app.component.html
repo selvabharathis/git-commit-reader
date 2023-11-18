@@ -1,8 +1,44 @@
-<div class="container-fluid">
-  <div class="row justify-content-center">
-      <div class="col-lg-8 content-container">
-          <!-- Your content goes here -->
-          
-      </div>
-  </div>
+<div class="addProduct" *ngIf="!isFormSubmitted">
+    <div class="card bg-dark text-white m-1 mt-5">
+        <div class="card-body">
+            <form [formGroup]="gitHubForm" (ngSubmit)="onSubmit()">
+                <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Owner</label>
+                        <div class="col-sm-1">
+                            <input type="text" class="form-control" placeholder="Enter github owner name"  formControlName="owner">
+                        </div>
+                </div>
+                <br>
+                <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Repository</label>
+                        <div class="col-sm-1">
+                            <input type="text" class="form-control"  placeholder="Enter repository name"  formControlName="repository">
+                        </div>
+                </div>
+                <br>
+                <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">CommitSha</label>
+                        <div class="col-sm-1">
+                            <input type="text" class="form-control"  placeholder="Enter commit sha code"  formControlName="commitSha">
+                        </div>
+                </div>
+                <br>
+                <div class="row justify-content-center">
+                    <div class="col-4">
+                        <button type="submit" class="btn btn-primary" [disabled]="!gitHubForm.valid">Search</button>&nbsp;&nbsp;
+                        <button (click)="onReset()" class="btn btn-warning" type="reset">Reset</button>
+                    </div>
+                </div>  
+                <br>
+                <p class="text blue">Value: {{ gitHubForm.value | json }}</p>
+                <p class="text blue">Value: {{ gitHubForm.valid | json }}</p>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="isFormSubmitted">
+    <app-commit-reader
+    [commitModel]="commitModel"
+    ></app-commit-reader>
 </div>
