@@ -37,7 +37,7 @@
     </div>
 </div>
 
-<div *ngIf="isFormSubmitted">
+<div *ngIf="isFormSubmitted && commitModel.sha != ''">
     <app-commit-reader
     [commitModel]="commitModel"
     ></app-commit-reader>

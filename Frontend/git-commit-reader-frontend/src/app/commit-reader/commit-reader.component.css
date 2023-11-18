@@ -1,0 +1,116 @@
+.commit-msg {
+    font-family: SF Pro Display;
+    font-size: 22px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    width: 513px;
+    height: 24px;
+    color: #39496A;
+}
+
+.author-by {
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    width: 83px;
+    height: 20px;
+    color: #767B84;
+}
+
+.author-bold {
+    width: 58px;
+    height: 20px;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    color: #2B3750;
+}
+
+.random-text {
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    width: 715px;
+    height: 40px;
+    color: #32405D;
+}
+
+p {
+    margin: 0 0 4px;
+}
+
+.commited-by {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    text-align: right;
+    color: #90949C;
+    height: 20px;
+}
+
+.commited-by-bold {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    text-align: right;
+    color: #6D727C;
+    height: 20px;
+}
+
+.parent {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: #90949C;
+    height: 20px;
+}
+
+.commit {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: #90949C;
+    height: 20px;
+}
+
+.parent-sha {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: #1C7CD6;
+    height: 20px;
+}
+
+.commit-sha {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: #32405D;
+    height: 20px;
+}

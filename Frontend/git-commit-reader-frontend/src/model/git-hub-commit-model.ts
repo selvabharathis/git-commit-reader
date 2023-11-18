@@ -3,7 +3,7 @@ import { FileModel } from "./file-model";
 import { ParentModel } from "./parent-model";
 
 export class GitHubCommitModel {
-    commitSha: string = '';
+    sha: string = '';
     commit: CommitModel = new CommitModel();
     parents: ParentModel[] = [];
     files: FileModel[] = [];

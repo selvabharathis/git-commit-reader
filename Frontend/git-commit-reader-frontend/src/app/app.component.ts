@@ -26,16 +26,16 @@ export class AppComponent {
     
   }
 
-  onSubmit() {
+  async onSubmit() {
     this.isFormSubmitted = true;
     if(this.gitHubForm.invalid) {
       return;
     }
 
-    this.apiService.getCommitDetails(this.gitHubForm.controls['owner'].value, this.gitHubForm.controls['repository'].value, this.gitHubForm.controls['commitSha'].value)
-                   .subscribe(commitDetails => {
+    await this.apiService.getCommitDetails(this.gitHubForm.controls['owner'].value, this.gitHubForm.controls['repository'].value, this.gitHubForm.controls['commitSha'].value)
+                   .subscribe(async commitDetails => {
                         console.log(commitDetails);
-                        this.commitModel = commitDetails;
+                        this.commitModel = await commitDetails;
                         this.isFormSubmitted = true;
                     }, errMessage => {
                         console.log(errMessage);

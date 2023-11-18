@@ -5,8 +5,8 @@ export class FileModel {
     additions: number = 0;
     deletions: number = 0;
     changes: number = 0;
-    blobUrl: string = '';
-    rawUrl: string = '';
-    contentsUrl: string = '';
+    blob_url: string = '';
+    raw_url: string = '';
+    contents_url: string = '';
     patch: string = '';
 }

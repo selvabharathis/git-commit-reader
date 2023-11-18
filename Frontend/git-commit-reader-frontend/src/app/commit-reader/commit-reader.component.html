@@ -1,8 +1,49 @@
-<div class="container-fluid">
-    <div class="row justify-content-center">
-        <div class="col-lg-8 content-container">
-            <!-- Your content goes here -->
-            <pre>{{commitModel | json}}</pre>
+<div class="container mt-5 ml-5">
+    <div class="row">
+      <!-- Left Area -->
+      <div class="col-md-6">
+        <div class="d-flex align-items-start">
+          <!-- GitHub Icon -->
+          <img src="../../assets/avatar.png" class="img-fluid me-2" height="49" width="49" />
+  
+          <!-- Space after the icon -->
+          <div style="width: 0.5rem"></div>
+  
+          <!-- Commit Message -->
+          <div>
+            <p class="commit-msg ">{{ commitModel.commit.message }}</p>
+            <p><span class="author-by">Authored by </span><span class="author-bold">{{ commitModel.commit.author.name }}</span><span class="author-by"> on </span><span class="author-bold">{{ commitModel.commit.author.date | date:'longDate' }}</span></p>
+            <p class="random-text ">This is body text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget ipsum 
+                massa egestas id pellentesque volutpat maecenas amet.</p>
+          </div>
         </div>
+      </div>
+  
+      <!-- Right Area -->
+      <div class="col-md-6 text-end">
+        <br>
+        <p><span class="commited-by">Committed by </span><span class="commited-by-bold">{{ commitModel.commit.committer.name }} </span><span class="commited-by">on </span><span class="commited-by-bold">{{ commitModel.commit.committer.date | date:'longDate' }}</span></p>
+        <p><span class="commit">Commit </span><span class="commit-sha">{{ commitModel.sha }}</span></p>
+        <p><span class="parent">Parent </span><span class="parent-sha">{{ commitModel.parents[0].sha }}</span></p>
+      </div>
+    </div>
+  
+    <!-- Space after the left and right areas -->
+    <div style="margin-top: 2rem;"></div>
+  
+    <!-- Expansion Panel -->
+    <div class="accordion" id="expansionPanel">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Expansion Panel
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#expansionPanel">
+          <div class="accordion-body">
+            <!-- Content of the expansion panel goes here -->
+          </div>
+        </div>
+      </div>
     </div>
   </div>

@@ -1,5 +1,5 @@
 export class ParentModel {
-    parentSha: string = '';
+    sha: string = '';
     url: string = '';
     htmlUrl: string = '';
 }
